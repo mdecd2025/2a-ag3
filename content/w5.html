@@ -156,13 +156,11 @@ img.add_border {
 <p>自適應行為研究：支持遺傳算法、神經網絡、人工智慧等技術，讓使用者能研究如何讓機器人根據環境或情況自我調整行為。</p>
 <p>機器人教育：Webots 也廣泛應用於教學領域，支援機器人學、程式設計（C/C++/Java/Python）等課程，幫助學生實踐和學習機器人技術。</p>
 <p>機器人競賽：Webots 可用於準備和參加各類機器人競賽，例如 Robotstadium 或 Rat's Life 等競賽，讓參賽者進行機器人設計與測試。</p>
-<p>What do I need to know to use Webots?<br/>要編寫自己的機器人控制器，需要具備 C、C++、Java、Python 或 MATLAB 程式語言的基本知識。但是，即使您不懂這些語言，您仍然可以使用名為 BotStudio 的簡單圖形程式語言對 e-puck 和 Hemisson 機器人進行程式設計。<br/>如果您不想使用 Webots 中提供的現有機器人模型，而想要創建自己的機器人模型，或在模擬環境中添加特殊對象，您將需要具備 3D 電腦圖形學和 VRML97 描述語言的基本知識。這將允許您在 Webots 中建立 3D 模型或從 3D 建模軟體中匯入它們。<br/>How do I get User Support?<br/>Cyberbotics透過其 Premier Service 計劃和客製化開發服務提供付費用戶支援。</p>
-<p>各個地方也提供社區支持，但是，不能保證您一定能得到問題的答案：</p>
-<p>帶有標籤的Robotics StackExchangewebots可能是詢問有關 Webots 的技術問題的最佳場所。<br/>GitHub Discussions可用於詢問與 Webots 及其文件的開發相關的問題。<br/>GitHub Issues僅用於報告在 Webots 中發現的錯誤。<br/>Discord可用於與 Webots 社群快速提問和自發性討論。<br/>Webots Simulation</p>
-<p><br/>一個 Webots 世界檔案（.wbt），定義了其中一個或多個機器人及其環境。該 .wbt 檔案有時會依賴外部的 PROTO 檔案（.proto）和材質貼圖。<br/>一個或多個控制程式，用於控制上述機器人（可使用 C/C++/Java/Python/MATLAB 等語言編寫）。<br/>一個可選的物理插件，用於修改 Webots 預設的物理行為（使用 C/C++ 編寫）。<br/>What is a World?<br/>在 Webots 中，世界是對機器人及其環境屬性的 3D 描述。它包含每個物體的描述：位置、方向、幾何形狀、外觀（如顏色或亮度）、物理屬性、物體類型等。世界是以層次結構組織的，物體可以包含其他物體（類似於 VRML97）。例如，一個機器人可以包含兩個輪子、一個距離感測器和一個關節，而該關節本身又可以包含一個攝像頭等。世界檔案不包含機器人的控制程式碼；它只指定每個機器人所需的控制器名稱。世界檔案會儲存在 ".wbt" 檔案中，這些 ".wbt" 檔案會存儲在每個 Webots 專案的 "worlds" 子目錄中。</p>
-<p>What is a Controller?<br/>控制器是用來控制在世界檔案中指定的機器人的電腦程式。控制器可以使用 Webots 支援的任何程式語言編寫：C、C++、Java、Python 或 MATLAB。當模擬開始時，Webots 會啟動指定的控制器，每個控制器作為一個獨立的進程運行，並將這些控制器進程與模擬中的機器人相關聯。需要注意的是，雖然多個機器人可以使用相同的控制程式碼，但每個機器人會啟動一個獨立的進程。</p>
-<p>一些程式語言需要編譯（如 C 和 C++），其他語言則需要解釋執行（如 Python 和 MATLAB），還有一些語言需要既編譯又解釋執行（如 Java）。例如，C 和 C++ 控制器會編譯成平台依賴的二進位執行檔（例如 Windows 下的 ".exe" 檔案）。Python 和 MATLAB 控制器由相應的執行時系統解釋執行（這些系統必須已安裝）。Java 控制器需要先編譯成位元碼（".class" 檔案或 ".jar" 檔案），然後由 Java 虛擬機解釋執行。</p>
-<p>每個控制器的原始檔案和二進位檔案會一起儲存在控制器目錄中。控制器目錄位於每個 Webots 專案的 "controllers" 子目錄中。</p>
+<p>What do I need to know to use Webots?<br/>要編寫自己的機器人控制器，需要具備 C、C++、Java、Python 或 MATLAB 程式語言的基本知識。但是，即使您不懂這些語言，您仍然可以使用名為 BotStudio 的簡單圖形程式語言對 e-puck 和 Hemisson 機器人進行程式設計。如果您不想使用 Webots 中提供的現有機器人模型，而想要創建自己的機器人模型，或在模擬環境中添加特殊對象，您將需要具備 3D 電腦圖形學和 VRML97 描述語言的基本知識。這將允許您在 Webots 中建立 3D 模型或從 3D 建模軟體中匯入它們。</p>
+<p><br/>How do I get User Support?<br/>Cyberbotics透過其 Premier Service 計劃和客製化開發服務提供付費用戶支援。各個地方也提供社區支持，但是，不能保證您一定能得到問題的答案：帶有標籤的Robotics StackExchangewebots可能是詢問有關 Webots 的技術問題的最佳場所。GitHub Discussions可用於詢問與 Webots 及其文件的開發相關的問題。GitHub Issues僅用於報告在 Webots 中發現的錯誤。Discord可用於與 Webots 社群快速提問和自發性討論。</p>
+<p>Webots Simulation<br/>一個 Webots 世界檔案（.wbt），定義了其中一個或多個機器人及其環境。該 .wbt 檔案有時會依賴外部的 PROTO 檔案（.proto）和材質貼圖。<br/>一個或多個控制程式，用於控制上述機器人（可使用 C/C++/Java/Python/MATLAB 等語言編寫）。<br/>一個可選的物理插件，用於修改 Webots 預設的物理行為（使用 C/C++ 編寫）。</p>
+<p>What is a World?<br/>在 Webots 中，世界是對機器人及其環境屬性的 3D 描述。它包含每個物體的描述：位置、方向、幾何形狀、外觀（如顏色或亮度）、物理屬性、物體類型等。世界是以層次結構組織的，物體可以包含其他物體（類似於 VRML97）。例如，一個機器人可以包含兩個輪子、一個距離感測器和一個關節，而該關節本身又可以包含一個攝像頭等。世界檔案不包含機器人的控制程式碼；它只指定每個機器人所需的控制器名稱。世界檔案會儲存在 ".wbt" 檔案中，這些 ".wbt" 檔案會存儲在每個 Webots 專案的 "worlds" 子目錄中。</p>
+<p>What is a Controller?<br/>控制器是用來控制在世界檔案中指定的機器人的電腦程式。控制器可以使用 Webots 支援的任何程式語言編寫：C、C++、Java、Python 或 MATLAB。當模擬開始時，Webots 會啟動指定的控制器，每個控制器作為一個獨立的進程運行，並將這些控制器進程與模擬中的機器人相關聯。需要注意的是，雖然多個機器人可以使用相同的控制程式碼，但每個機器人會啟動一個獨立的進程。一些程式語言需要編譯（如 C 和 C++），其他語言則需要解釋執行（如 Python 和 MATLAB），還有一些語言需要既編譯又解釋執行（如 Java）。例如，C 和 C++ 控制器會編譯成平台依賴的二進位執行檔（例如 Windows 下的 ".exe" 檔案）。Python 和 MATLAB 控制器由相應的執行時系統解釋執行（這些系統必須已安裝）。Java 控制器需要先編譯成位元碼（".class" 檔案或 ".jar" 檔案），然後由 Java 虛擬機解釋執行。每個控制器的原始檔案和二進位檔案會一起儲存在控制器目錄中。控制器目錄位於每個 Webots 專案的 "controllers" 子目錄中。</p>
 <p>What is a Supervisor Controller?<br/>Supervisor 控制器是設置為 TRUE 的機器人監控欄位的控制器，它可以執行通常只有人類操作員才能進行的操作，而非真實機器人能執行的操作。Supervisor 控制器可以使用上述任何程式語言編寫。然而，與一般的機器人控制器不同，Supervisor 控制器擁有對特權操作的存取權。這些特權操作包括模擬控制，例如將機器人移動到隨機位置、進行模擬的視頻捕捉等。</p>
 <article class="group/turn w-full text-token-text-primary focus-visible:outline-2 focus-visible:outline-offset-[-4px]" data-scroll-anchor="true" data-testid="conversation-turn-14" dir="auto" tabindex="-1">
 <div class="text-base my-auto mx-auto py-[18px] px-6">
@@ -180,8 +178,7 @@ img.add_border {
 </div>
 </div>
 </div>
-</article>
-<br />w3 << <a href='w3.html'>Previous</a> <a href='webots摘要.html'>Next</a> >> webots摘要</div>
+</article><br />w3 << <a href='w3.html'>Previous</a> <a href='webots摘要.html'>Next</a> >> webots摘要</div>
         
     <!-- footer -->
       <div class="container">
