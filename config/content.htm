@@ -94,6 +94,45 @@ brython_div1 &lt;= "5. " + html.A("41223144", href="https://mdecd2025.github.io/
 <p>What is a World?<br/>在 Webots 中，世界是對機器人及其環境屬性的 3D 描述。它包含每個物體的描述：位置、方向、幾何形狀、外觀（如顏色或亮度）、物理屬性、物體類型等。世界是以層次結構組織的，物體可以包含其他物體（類似於 VRML97）。例如，一個機器人可以包含兩個輪子、一個距離感測器和一個關節，而該關節本身又可以包含一個攝像頭等。世界檔案不包含機器人的控制程式碼；它只指定每個機器人所需的控制器名稱。世界檔案會儲存在 ".wbt" 檔案中，這些 ".wbt" 檔案會存儲在每個 Webots 專案的 "worlds" 子目錄中。</p>
 <p>What is a Controller?<br/>控制器是用來控制在世界檔案中指定的機器人的電腦程式。控制器可以使用 Webots 支援的任何程式語言編寫：C、C++、Java、Python 或 MATLAB。當模擬開始時，Webots 會啟動指定的控制器，每個控制器作為一個獨立的進程運行，並將這些控制器進程與模擬中的機器人相關聯。需要注意的是，雖然多個機器人可以使用相同的控制程式碼，但每個機器人會啟動一個獨立的進程。一些程式語言需要編譯（如 C 和 C++），其他語言則需要解釋執行（如 Python 和 MATLAB），還有一些語言需要既編譯又解釋執行（如 Java）。例如，C 和 C++ 控制器會編譯成平台依賴的二進位執行檔（例如 Windows 下的 ".exe" 檔案）。Python 和 MATLAB 控制器由相應的執行時系統解釋執行（這些系統必須已安裝）。Java 控制器需要先編譯成位元碼（".class" 檔案或 ".jar" 檔案），然後由 Java 虛擬機解釋執行。每個控制器的原始檔案和二進位檔案會一起儲存在控制器目錄中。控制器目錄位於每個 Webots 專案的 "controllers" 子目錄中。</p>
 <p>What is a Supervisor Controller?<br/>Supervisor 控制器是設置為 TRUE 的機器人監控欄位的控制器，它可以執行通常只有人類操作員才能進行的操作，而非真實機器人能執行的操作。Supervisor 控制器可以使用上述任何程式語言編寫。然而，與一般的機器人控制器不同，Supervisor 控制器擁有對特權操作的存取權。這些特權操作包括模擬控制，例如將機器人移動到隨機位置、進行模擬的視頻捕捉等。</p>
+<p><strong>2.<span>整理</span><span>重要的英文單字與用法, 並且針對其中所使用的英文文法逐句說明.</span></strong></p>
+<p class="" data-end="131" data-start="106"><strong data-end="130" data-start="106">Present Simple Tense</strong>:</p>
+<p>"Webots is a professional mobile robot simulation software package."</p>
+<p>"It offers a rapid prototyping environment."</p>
+<p>"The user can add simple passive objects."</p>
+<p>"These robots can have different locomotion schemes."</p>
+<p><strong><span></span></strong></p>
+<p><strong><strong data-end="631" data-start="611"><strong data-end="382" data-start="367">Modal Verbs</strong>:</strong></strong></p>
+<p>"can" (e.g., "The user can program each robot individually.")</p>
+<p>"may" (e.g., "They may be equipped with a number of sensor and actuator devices.")</p>
+<p>"will" (e.g., "Webots will launch the specified controllers.")</p>
+<p><strong><strong data-end="631" data-start="611">Relative Clauses</strong>:</strong></p>
+<p>Webots is a professional mobile robot simulation software package that offers a rapid prototyping environment."</p>
+<p>"A world, in Webots, is a 3D description of the properties of robots and of their environment."</p>
+<p><strong data-end="881" data-start="864">Passive Voice</strong>:</p>
+<p>The user is given a chance to add simple passive objects."</p>
+<p>"The world file is saved in ".wbt" files."</p>
+<p><strong data-end="1026" data-start="1004">Infinitive Phrases</strong>:</p>
+<p>to create 3D virtual worlds with physics properties."</p>
+<p>"to exhibit the desired behavior."</p>
+<p>"to modify Webots regular physics behavior."</p>
+<p><strong data-end="1198" data-start="1182">Noun Phrases</strong>:</p>
+<p>Webots world file (.wbt) that defines one or several robots."</p>
+<p>"A basic knowledge of the C, C++, Java, Python, or MATLAB programming language is necessary</p>
+<p><strong data-end="1396" data-start="1371">Conditional Sentences</strong>:</p>
+<p>"If you don't want to use existing robot models... you will need a basic knowledge of 3D computer graphics."."</p>
+<p><strong data-end="1545" data-start="1519">Adjectives and Adverbs</strong>:</p>
+<p>Rapid prototyping environment."</p>
+<p>"Simple graphical programming language."</p>
+<p>"Quick questions and spontaneous discussions."</p>
+<p><strong data-end="1715" data-start="1690">Prepositional Phrases</strong>:</p>
+<p>"In the toy industry."</p>
+<p>"In C/C++/Java/Python programming lectures."</p>
+<p>"In Webots."</p>
+<p><strong data-end="1829" data-start="1818">Gerunds</strong>:</p>
+<p>"Adding new interfaces is possible."</p>
+<p>"Teaching robotics."</p>
+<p></p>
+<p></p>
 <p><strong>3.webots摘要</strong></p>
 <p data-end="592" data-start="40"><strong data-end="59" data-start="40">What is Webots?</strong></p>
 <p data-end="592" data-start="40">Webots is a professional mobile robot simulation software that allows users to create 3D virtual worlds with physics properties like mass, friction, and joints. Users can add robots with various locomotion types (wheeled, legged, flying) and equip them with sensors and actuators (e.g., cameras, motors). It also supports programming robots for specific behaviors, with many models and examples to assist users. Webots can interface with real robots, allowing control programs to be transferred from simulation to real-world robots.</p>
